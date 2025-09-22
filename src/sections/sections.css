@@ -1,0 +1,67 @@
+/* Base section style */
+.section {
+  min-height: 100vh;            /* full screen height */
+  padding: 80px 20px;           /* top/bottom spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* vertically centers content */
+  scroll-margin-top: 70px;      /* ensures nav offset when scrolling */
+}
+
+/* Headings */
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Paragraphs */
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+/* Alternating background colors */
+#about {
+  background: #111;
+  color: #fff;
+}
+
+#experience {
+  background: #f7f7f7;
+  color: #222;
+}
+
+#projects {
+  background: #111;
+  color: #fff;
+}
+
+#contact {
+  background: #f7f7f7;
+  color: #222;
+}
+
+#resume {
+  background: #111;
+  color: #fff;
+}
+
+/* Optional: smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Links inside sections */
+.section a {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.section a:hover {
+  color: #66ccff;
+  text-decoration: underline;
+}
