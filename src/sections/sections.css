@@ -1,12 +1,15 @@
 /* Base section style */
 .section {
-  min-height: 100vh;            /* full screen height */
-  padding: 80px 20px;           /* top/bottom spacing */
+  min-height: 100vh;
+  padding: 80px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;      /* vertically centers content */
-  scroll-margin-top: 70px;      /* ensures nav offset when scrolling */
+  justify-content: center;
+  scroll-margin-top: 70px;
+  position: relative;
+  z-index: 1;
 }
+
 
 /* Headings */
 .section h2 {
@@ -23,33 +26,7 @@
   max-width: 800px;
 }
 
-/* Alternating background colors */
-#about {
-  background: #111;
-  color: #fff;
-}
-
-#experience {
-  background: #f7f7f7;
-  color: #222;
-}
-
-#projects {
-  background: #111;
-  color: #fff;
-}
-
-#contact {
-  background: #f7f7f7;
-  color: #222;
-}
-
-#resume {
-  background: #111;
-  color: #fff;
-}
-
-/* Optional: smooth scrolling */
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
@@ -61,6 +38,7 @@ html {
   font-weight: 500;
 }
 
+/* Link hover effect */
 .section a:hover {
   color: #66ccff;
   text-decoration: underline;

@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+/* Global styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Gradient background across whole site */
+body {
+  color: white;
+  background: linear-gradient(-45deg, #0f172a, #1d4ed8, #a21caf, #06b6d4);
+  background-size: 400% 400%;
+  background-position: var(--bg-x, 0%) 50%;
+  background-attachment: fixed;
+  transition: background-position 0.05s linear;
+  will-change: background-position;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* App header */
 .App-header {
-  background-color: #282c34;
-  min-height: 50vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+/* Header text */
+.App-header p {
+  font-size: 3rem;
+  max-width: 600px;
+  line-height: 1.5;
+  margin: 20px 0 0;
+  color: #fcfbfb;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Header image */
+.Header-image {
+  width: 20vmin; 
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+/* Base section style */
+.section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-margin-top: 70px;
+  position: relative;
+  z-index: 1;
+  color: white; /* default text is light */
+}
+
+/* Dark overlay for readability */
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35); 
+  z-index: -1; /* stays behind content */
+}
+
+/* Headings */
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Paragraphs */
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Links inside sections */
+.section a {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: 500;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.section a:hover {
+  color: #66ccff;
+  text-decoration: underline;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  body {
+    transition: background-position 0.15s ease-out;
+    will-change: background-position;
   }
 }

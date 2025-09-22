@@ -27,7 +27,7 @@ export const NavBar = () => {
       expand="lg"
       bg="dark"
       variant="dark"
-      sticky="top"
+      fixed="top"
       className={`px-4 ${scrolled ? "scrolled" : ""}`}
     >
       <Container fluid>

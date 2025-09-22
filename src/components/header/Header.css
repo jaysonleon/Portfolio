@@ -1,0 +1,26 @@
+/* Header styles */
+.App-header {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header text */
+.App-header p {
+  font-size: clamp(1.5rem, 3vw + 1rem, 3rem);
+  max-width: 600px;
+  line-height: 1.5;
+  margin: 20px 0 0;
+  color: #fcfbfb;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Header image */
+.Header-image {
+  width: 20vmin;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
