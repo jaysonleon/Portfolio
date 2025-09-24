@@ -7,4 +7,3 @@ test('renders About Me heading', () => {
   const heading = screen.getByText(/About Me/i);
   expect(heading).toBeInTheDocument();
 });
-

@@ -6,8 +6,8 @@ export const Experience = () => {
 
   const experiences = {
     "Teacher's Assistant": {
-      title: "Teacher's Assistant",
-      company: "Northeastern University",
+      title: "Teacher's Assistant – Fall 2024",
+      company: "Northeastern University, Object Oriented Design (CS3500)",
       period: "Sept 2024 – Dec 2024",
       bullets: [
         "Hosted solo/group office hours during the week. Helped students with GitHub, design, testing, and debugging issues.",

@@ -10,7 +10,6 @@
   z-index: 1;
 }
 
-
 /* Headings */
 .section h2 {
   font-size: 2.5rem;
@@ -44,12 +43,14 @@ html {
   text-decoration: underline;
 }
 
+/* About Section */
 .about-section {
   padding: 60px;
   color: white;
   text-align: center;
 }
 
+/* Grid layout for about cards */
 .about-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -57,6 +58,7 @@ html {
   margin-top: 40px;
 }
 
+/* Responsive adjustments */
 .about-card {
   background: transparent;
   padding: 20px;
@@ -65,21 +67,25 @@ html {
   line-height: 1.6;
 }
 
+/* Card headings and text */
 .about-card h3 {
   margin-bottom: 10px;
   color: #f9fafb;
   font-size: 1.2rem;
 }
 
+/* Card paragraphs */
 .about-card p {
   color: #f9fafb;
   font-size: 1.1rem;
 }
 
+/* Stack Section */
 .stack {
   margin-top: 32px;
 }
 
+/* Stack title */
 .stack-title {
   text-align: center;
   font-weight: 800;
@@ -97,11 +103,12 @@ html {
   max-width: 800px; 
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
-  gap: 18px 40px; /* row gap, column gap */
+  gap: 18px 40px; /* row, column */
   justify-items: center;
   text-align: center;
 }
 
+/* individual stack item */
 .stack-item {
   font-size: 1rem;
   color: #fff;
@@ -109,8 +116,9 @@ html {
   transition: color 0.2s ease;
 }
 
+/* hover effect */
 .stack-item:hover {
-  color: #38bdf8; /* subtle hover color */
+  color: #38bdf8;
   cursor: default;
 }
 
@@ -127,13 +135,14 @@ html {
   }
 }
 
-/* ===== Experience mini navbar ===== */
+/* Experience mini navbar */
 .experience-nav {
   display: flex;
   justify-content: center;
   margin-bottom: 24px;
 }
 
+/* Experience Nav list */
 .experience-nav ul {
   list-style: none;
   display: flex;
@@ -142,6 +151,7 @@ html {
   margin: 0;
 }
 
+/* Experience Nav items */
 .experience-nav-item {
   cursor: pointer;
   font-weight: 600;
@@ -151,16 +161,19 @@ html {
   color: #ccc;
 }
 
+/* Hover and active states */
 .experience-nav-item:hover {
   background: rgba(255,255,255,0.12);
   color: #fff;
 }
 
+/* Active state */
 .experience-nav-item.active {
   background: rgba(255,255,255,0.25);
   color: #38bdf8;
 }
 
+/* Experience content area */
 .experience-content {
   max-width: 700px;
   margin: 0 auto;
@@ -169,7 +182,7 @@ html {
   padding-top: 20px;
 }
 
-
+/* Mobile tweaks */
 /* responsive: tighten gaps on small screens */
 @media (max-width: 640px) {
   .experience-nav ul { gap: 12px; }

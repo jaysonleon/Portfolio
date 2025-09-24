@@ -43,6 +43,7 @@ export const About = () => {
       </div>
 
       <hr></hr>
+      
       <h2 className="stack-title">My Tech Stack</h2>
       <ul className="stack-grid">
         <li className="stack-item">
