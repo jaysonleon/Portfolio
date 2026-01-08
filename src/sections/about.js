@@ -72,7 +72,7 @@ export const About = () => {
         </li>
         <li className="stack-item">
           <span className="stack-icon devicon-mongodb-plain"></span>
-          <span>SQL / NoSQL</span>
+          <span>SQL</span>
         </li>
         <li className="stack-item">
           <span className="stack-icon devicon-pytorch-original"></span>
